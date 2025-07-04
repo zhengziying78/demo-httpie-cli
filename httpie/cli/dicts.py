@@ -23,7 +23,7 @@ class HTTPHeadersDict(CIMultiDict, BaseMultiDict):
         values will be overwritten and the value will be set
         to `None`.
         """
-        if value is None:
+        if not value is None:
             self[key] = value
             return None
 
