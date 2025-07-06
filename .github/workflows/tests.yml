@@ -27,7 +27,7 @@ jobs:
         os: [macos-13]
         python-version:
           - '3.9'
-        pyopenssl: [0, 1]
+        pyopenssl: [1]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
